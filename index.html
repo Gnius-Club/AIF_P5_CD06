@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudadanía Digital 6: Tsunami</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">🧑‍💻</span> <strong>Ciudadanía Digital Misión 6: Tsunami</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">👁️</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Comprender la verificación de contenidos y el pensamiento crítico.</li>
+                                        <li>Distinguir hechos, opiniones, noticias falsas y contenido patrocinado en plataformas infantiles.</li>
+                                        <li>Desarrollar estrategias prácticas y usar herramientas básicas de verificación para detectar contenido falso: contraste de fuentes, búsqueda inversa.</li>
+                                        <li>Desarrollar el escepticismo constructivo: dudar con base, sin rechazar todo.</li>
+                                        <li>Aplicar estrategias para identificar fuentes confiables y dudar constructivamente ante contenidos virales o sospechosos.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Recuerdo Relámpago</strong></li>
+                                        <li><strong class="tactic-highlight">Conexión Ada</strong></li>
+                                        <li><strong class="tactic-highlight">Challenge Express: La Expedición del Verificador</strong></li>
+                                        <li><strong class="tactic-highlight">Ticket de Salida/Tweet de Aprendizaje</strong></li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Investigación en equipo de un caso de publicación viral usando herramientas de verificación (contraste de fuentes, búsqueda inversa).</li>
+                                        <li>Presentación en equipo de un veredicto (tesoro/trampa) con justificación.</li>
+                                        <li>Creación individual de una "Regla de Oro del Explorador Digital" (Tweet de Aprendizaje).</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Ada" activo y funcionando.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (ej. tabletas, ordenadores).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Ada" para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Recuerdo Relámpago ⏰ 5 minutos</h2>
+                <p>Activar conocimientos de la Misión 5 (preguntas de verificación) a través de la síntesis y el pensamiento ágil.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recuerdo Relámpago ⏰ 3 minutos</h3>
+                            <p>Proyecta Diapositiva 2. Recuerdo Relámpago: Palabra Secreta Digital.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Atención, sismólogos de la información. Voy a proyectar una palabra secreta de la misión pasada. No la digan en voz alta. Escriban en su cuaderno las tres preguntas clave que aprendimos a usar cuando nos encontramos con ella. 🤔<br>(En pantalla se proyecta la palabra: VERIFICAR)”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Recuerdo Relámpago ⏰ 2 minutos</h3>
+                            <p>Realiza una breve reflexión guiada para conectar la estrategia de "preguntar" con la de "usar herramientas".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Exacto, las preguntas clave son: ¿Quién lo dice? ¿Dónde más aparece? ¿Cómo me hace sentir? Ya sabemos qué preguntar. Pero a veces, para encontrar las respuestas, necesitamos herramientas, como un explorador necesita un mapa. Un Tsunami de información falsa puede arrasar con la verdad. Hoy aprenderemos a usar las herramientas para navegar esas olas y llegar a tierra firme. 🗺️”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Conexión Ada ⏰ 20 minutos</h2>
+                <p>Explorar de forma individual las herramientas de verificación, como el contraste de fuentes y la búsqueda inversa de imágenes.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Conexión Ada ⏰ 0 minutos</h3>
+                            <p>Proyecta Diapositiva 3. Conexión Ada: Misión Tsunami.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Ahora, conéctense a la plataforma. Ada les entregará un kit de herramientas de explorador digital. Les enseñará a usar la brújula del contraste de fuentes y el mapa de la búsqueda de imágenes. La clave de activación de hoy es: Misión Tsunami 🌊. Escríbanla cuando se las pida.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Conexión Ada ⏰ 20 minutos</h3>
+                            <p>Proyecta Diapositiva 4. Timer 20 min.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Challenge Express: La Expedición del Verificador ⏰ 10 minutos</h2>
+                <p>Contextualizar la necesidad de usar herramientas de verificación para rastrear el origen de una información.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Challenge Express: La Expedición del Verificador ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 5. Challenge Express: La Expedición del Verificador (con caso real).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Exploradores. Ha llegado a nuestras manos un ‘mapa del tesoro’ digital. Es una imagen que se ha vuelto viral en todo el mundo y que promete algo increíble. Pero, ¿es un tesoro real o una trampa?<br>Este es su reto: En equipos, van a investigar esta publicación viral. Su misión es usar las herramientas que les dio Ada para seguir las pistas y descubrir si la imagen los lleva a un tesoro de verdad (información confiable) o a una trampa (desinformación).<br>🗺️ El Caso: El Bonsái de Sandía<br>Ha estado circulando por redes sociales una foto fascinante. Muestra una pequeña planta, estilo bonsái, de la que cuelga una sandía perfectamente formada pero en miniatura, del tamaño de una uva. La publicación afirma: ‘¡La última maravilla de la jardinería japonesa! Científicos logran crear el bonsái de sandía, ¡la fruta más pequeña y adorable del mundo!’<br>¿Es esto posible? ¡La expedición para descubrir la verdad comienza ahora!”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Challenge Express: La Expedición del Verificador ⏰ 3 minutos</h3>
+                            <p>Pide a los equipos que usen buscadores para investigar sobre el "bonsái de sandía" y busquen al menos dos fuentes más para contrastar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Cada equipo tiene su mapa. La primera herramienta de su kit es la brújula de contraste. No se fíen de un solo camino. Usen los buscadores y busquen las palabras clave: ‘bonsái de sandía’, ‘fruta más pequeña del mundo’. ¿Otros exploradores (sitios de noticias, blogs de ciencia, páginas de jardinería) han encontrado este mismo ‘tesoro’? ¿Lo confirman o advierten que es un espejismo? Tienen 3 minutos para encontrar al menos dos fuentes más.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Challenge Express: La Expedición del Verificador ⏰ 3 minutos</h3>
+                            <p>Pide a los equipos que utilicen una herramienta de búsqueda inversa de imágenes (como Google Lens) para analizar la foto del bonsái y rastrear su origen.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"“Excelente trabajo de contraste. Ahora, usen su segunda herramienta: el mapa del origen. La imagen de su publicación, ¿es única o ha sido usada antes? Hagan una búsqueda inversa de esa foto. ¿Aparece en otros contextos? ¿Quizás en un concurso de arte digital? ¿O en la página de un artista? Esta herramienta les dirá la verdadera historia de la imagen. Tienen 3 minutos para rastrear su origen. <br>📍”(Nota: La búsqueda revelará que la imagen es una creación de arte digital, a menudo atribuida a artistas que usan software 3D, y que no existe tal planta)."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Challenge Express: La Expedición del Verificador ⏰ 2 minutos</h3>
+                            <p>Pide a los equipos que compartan brevemente su descubrimiento más importante.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“¡Expedición completada! Ahora, cada equipo compartirá su hallazgo clave. ¿Qué descubrieron? ¿El bonsái de sandía es real? ¿Qué prueba encontraron que fue definitiva para tomar su decisión? Sean breves y directos. Vamos a construir juntos el mapa completo de esta historia.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Ticket de Salida/Tweet de Aprendizaje ⏰ 5 minutos</h2>
+                <p>Sintetizar el aprendizaje en un principio práctico sobre la verificación activa.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 9. Tweet de Aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Para cerrar, escriban su propia Regla de Oro del Explorador Digital. Una frase, un tweet, que resuma su compromiso de usar herramientas antes de creer.<br>Ejemplo del maestro: Mi regla: Una noticia sin fuentes es un mapa sin tesoro. No sigo mapas en blanco. #VerificarConHerramientas<br>Antes de terminar, quédense con una idea que tenga sentido para ustedes.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Pide a los estudiantes que compartan su Regla de Oro con un compañero y escuchen su idea.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Compartan su Regla de Oro con la persona de al lado. Escuchen su regla. ¿En qué se parecen? ¿Qué pueden aprender de su perspectiva? Ser un buen explorador también es compartir el conocimiento.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Ticket de Salida/Tweet de Aprendizaje ⏰ 1 minutos</h3>
+                            <p>Proyecta Diapositiva 10. Reflexión final.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Hoy no solo se hicieron preguntas, usaron herramientas para encontrar respuestas. Aprendieron que ante un tsunami de información, no estamos indefensos. Tenemos un kit de exploración para navegar las olas y llegar a la verdad. Se han convertido en exploradores digitales equipados. Misión completada.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
